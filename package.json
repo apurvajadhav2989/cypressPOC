@@ -1,0 +1,23 @@
+{
+  "name": "framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/cypress run ",
+    "headtest" : "npm run test -- --headed",
+    "chrometest" : "npm run test -- --brower chrome --parallel",
+    "firefoxtest" : "npm run test -- --brower firefox",
+    "mochawesometest" : "npm run test -- --reporter mochawesome",
+    "dashboardtest":"npm run test -- --record --key 4a450c0d-bf28-4f74-90bb-d6e5c204062f --headed",
+    "envtest" : "npm run test --env SUITE=practice"
+
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^9.7.0",
+    "mocha": "^10.0.0",
+    "mochawesome": "^7.1.3"
+  }
+}
